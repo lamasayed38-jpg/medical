@@ -1,0 +1,39 @@
+
+:root {
+  font-family: 'Inter', sans-serif;
+  color: #18324f;
+  background: #ffffff;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+#root {
+  min-height: 100vh;
+  width: 100%;
+}
+
+::selection {
+  background: #1675b9;
+  color: #ffffff;
+}
+
+:focus-visible {
+  outline: 3px solid #58a6df;
+  outline-offset: 3px;
+}

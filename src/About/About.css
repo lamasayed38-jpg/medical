@@ -1,0 +1,153 @@
+
+.about-page {
+  color: #17324d;
+  background: #ffffff;
+}
+
+.about-hero {
+  padding: 65px 7%;
+  background: #f1f7fc;
+  border-bottom: 1px solid #e1ebf4;
+}
+
+.about-heading {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.about-heading .section-label,
+.about-content .section-label {
+  display: inline-block;
+  margin-bottom: 16px;
+  color: #1976b9;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.about-heading h1 {
+  margin: 0 0 16px;
+  font-size: clamp(32px, 4vw, 46px);
+  line-height: 1.2;
+}
+
+.about-heading > p {
+  margin: 0;
+  color: #627487;
+  font-size: 17px;
+  line-height: 1.8;
+}
+
+.about.section {
+  padding: 70px 7%;
+}
+
+.about-content {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.about-content h2 {
+  margin: 0 0 12px;
+  font-size: clamp(28px, 3vw, 38px);
+}
+
+.about-subtitle {
+  margin: 0 0 24px;
+  color: #1976b9;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.about-content > p {
+  margin: 0 0 18px;
+  color: #5c6f82;
+  font-size: 16px;
+  line-height: 1.9;
+}
+
+.about-highlight {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-top: 32px;
+  padding: 22px;
+  border: 1px solid #e0ebf4;
+  border-radius: 12px;
+  background: #f7fafd;
+}
+
+.about-highlight-icon {
+  display: flex;
+  width: 52px;
+  height: 52px;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  color: #ffffff;
+  background: #1976b9;
+  font-size: 25px;
+}
+
+.about-highlight h3 {
+  margin: 0 0 6px;
+  font-size: 17px;
+}
+
+.about-highlight p {
+  margin: 0;
+  color: #687b8d;
+  font-size: 14px;
+}
+
+.about-values {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 7% 75px;
+}
+
+.about-value-card {
+  padding: 26px;
+  border: 1px solid #e2ebf3;
+  border-radius: 12px;
+  background: #ffffff;
+  box-shadow: 0 8px 25px #17324d08;
+}
+
+.about-value-card > span {
+  color: #1976b9;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.about-value-card h3 {
+  margin: 16px 0 10px;
+  font-size: 19px;
+}
+
+.about-value-card p {
+  margin: 0;
+  color: #637588;
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+@media (max-width: 750px) {
+  .about-hero {
+    padding: 45px 22px;
+  }
+
+  .about.section {
+    padding: 45px 22px;
+  }
+
+  .about-values {
+    grid-template-columns: 1fr;
+    padding: 0 22px 45px;
+  }
+}

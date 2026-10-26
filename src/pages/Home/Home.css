@@ -1,0 +1,202 @@
+
+.home-page {
+  width: 100%;
+  overflow: hidden;
+  color: #17324d;
+  background: #ffffff;
+}
+
+.home-hero {
+  width: 100%;
+  min-height: 620px;
+  padding: 60px 7%;
+  display: grid;
+  grid-template-columns: 1fr 0.9fr;
+  align-items: center;
+  gap: 48px;
+  background: #f1f7fc;
+}
+
+.home-content {
+  width: 100%;
+  max-width: 620px;
+}
+
+.home-label {
+  margin: 0 0 18px;
+  color: #1976b9;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.home-content h1 {
+  margin: 0 0 16px;
+  color: #173b60;
+  font-size: clamp(36px, 4vw, 56px);
+  line-height: 1.15;
+}
+
+.home-content h2 {
+  margin: 0 0 20px;
+  color: #247db8;
+  font-size: clamp(23px, 2.5vw, 32px);
+}
+
+.home-description {
+  max-width: 550px;
+  margin: 0 0 28px;
+  color: #526579;
+  font-size: 16px;
+  line-height: 1.9;
+}
+
+.home-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-bottom: 24px;
+}
+
+.home-btn {
+  display: inline-flex;
+  min-height: 48px;
+  align-items: center;
+  justify-content: center;
+  padding: 13px 22px;
+  border: 2px solid #1976b9;
+  border-radius: 7px;
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.2s ease;
+}
+
+.primary-btn {
+  color: #ffffff;
+  background: #1976b9;
+}
+
+.primary-btn:hover {
+  background: #145d91;
+}
+
+.secondary-btn {
+  color: #1976b9;
+  background: #ffffff;
+}
+
+.secondary-btn:hover {
+  background: #e4f1fa;
+}
+
+.home-location {
+  margin: 0;
+  color: #526579;
+  font-size: 14px;
+}
+
+.home-location span {
+  margin-right: 8px;
+  color: #1976b9;
+}
+
+.home-image {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  min-width: 0;
+  min-height: 480px;
+  overflow: hidden;
+  border-radius: 18px;
+  background: #e4f0f9;
+}
+
+.doctor-real-photo {
+  display: block;
+  width: 100%;
+  max-width: 520px;
+  max-height: 500px;
+  object-fit: contain;
+  object-position: bottom center;
+}
+
+.image-caption {
+  position: absolute;
+  right: 18px;
+  bottom: 18px;
+  left: 18px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 15px;
+  border-radius: 10px;
+  background: #ffffff;
+  box-shadow: 0 5px 24px #17324d18;
+}
+
+.image-caption > span {
+  display: flex;
+  width: 42px;
+  height: 42px;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  color: #ffffff;
+  background: #1976b9;
+}
+
+.image-caption strong {
+  font-size: 14px;
+}
+
+.image-caption p {
+  margin: 4px 0 0;
+  color: #64778a;
+  font-size: 12px;
+}
+
+@media (max-width: 850px) {
+  .home-hero {
+    grid-template-columns: 1fr;
+    gap: 32px;
+    padding: 45px 6%;
+  }
+
+  .home-content {
+    max-width: none;
+  }
+
+  .home-image {
+    min-height: 380px;
+  }
+
+  .doctor-real-photo {
+    max-height: 420px;
+  }
+}
+
+@media (max-width: 480px) {
+  .home-hero {
+    padding: 35px 20px;
+  }
+
+  .home-content h1 {
+    font-size: 36px;
+  }
+
+  .home-buttons {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .home-btn {
+    width: 100%;
+  }
+
+  .home-image {
+    min-height: 320px;
+  }
+}

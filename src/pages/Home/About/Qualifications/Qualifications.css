@@ -1,0 +1,134 @@
+
+.qualifications-page {
+  min-height: 70vh;
+  color: #17324d;
+  background: #fff;
+}
+
+.qualifications-hero {
+  padding: 65px 7%;
+  text-align: center;
+  background: #f1f7fc;
+  border-bottom: 1px solid #e1ebf4;
+}
+
+.section-label {
+  color: #1976b9;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.qualifications-hero h1 {
+  margin: 18px 0 14px;
+  font-size: clamp(32px, 4vw, 46px);
+}
+
+.qualifications-hero p {
+  max-width: 650px;
+  margin: 0 auto;
+  color: #627487;
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.qualifications-content {
+  max-width: 1250px;
+  margin: 0 auto;
+  padding: 60px 7% 75px;
+}
+
+.qualifications-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px;
+}
+
+.qualification-card {
+  position: relative;
+  padding: 28px 24px;
+  border: 1px solid #e0eaf3;
+  border-radius: 12px;
+  background: #fff;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.qualification-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px #17324d10;
+}
+
+.qualification-number {
+  position: absolute;
+  top: 18px;
+  right: 20px;
+  color: #a5b8c9;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.qualification-symbol {
+  display: flex;
+  width: 48px;
+  height: 48px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  color: #1976b9;
+  background: #eaf4fc;
+  font-size: 23px;
+}
+
+.qualification-card h2 {
+  margin: 22px 0 8px;
+  font-size: 21px;
+}
+
+.qualification-card p {
+  margin: 0;
+  color: #687b8d;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.education-note {
+  margin-top: 35px;
+  padding: 30px;
+  border-radius: 12px;
+  background: #f5f9fc;
+}
+
+.education-note h2 {
+  margin: 12px 0;
+  font-size: 24px;
+}
+
+.education-note p {
+  margin: 0;
+  color: #627487;
+  line-height: 1.8;
+}
+
+@media (max-width: 850px) {
+  .qualifications-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 520px) {
+  .qualifications-hero {
+    padding: 45px 20px;
+  }
+
+  .qualifications-content {
+    padding: 35px 20px 45px;
+  }
+
+  .qualifications-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .education-note {
+    padding: 22px;
+  }
+}
